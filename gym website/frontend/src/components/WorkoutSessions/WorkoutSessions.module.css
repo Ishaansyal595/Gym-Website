@@ -1,0 +1,80 @@
+.workout_session {
+    min-height: 100vh;
+    display: flex;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0 50px 0;
+    gap: 75px;
+  }
+  .workout_session .wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .workout_session img{
+    height: 85%;
+    width: 100%;
+  }
+
+  .workout_session .wrapper h1 {
+    font-size: 2.2rem;
+    color: #111;
+  }
+  .workout_session .wrapper p {
+    font-size: 1.4rem;
+    color: gray;
+  }
+  .workout_session .wrapper .bootcamps {
+    font-size: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .workout_session .wrapper .bootcamps div {
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 20px 10px;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .workout_session .wrapper .bootcamps div:hover {
+    background: #111;
+    transition: 0.3s;
+  }
+  .workout_session .wrapper .bootcamps div:hover h4 {
+    color: #0095ff;
+    transition: 0.3s;
+  }
+  .workout_session .wrapper .bootcamps div:hover p {
+    color: whitesmoke;
+    transition: 0.3s;
+  }
+  @media (max-width: 1520px) {
+    .workout_session {
+      min-width: 100%;
+      padding: 50px 20px 50px 20px;
+      gap: 25px;
+    }
+  }
+  @media (max-width: 1200px) {
+    .workout_session {
+      flex-direction: column;
+    }
+    .workout_session .wrapper h1 {
+      font-size: 1.6rem;
+    }
+    .workout_session .wrapper p {
+      font-size: 20px;
+    }
+    .workout_session .wrapper .bootcamps div h4 {
+      font-size: 20px;
+    }
+    .workout_session .wrapper .bootcamps div p {
+      font-size: 20px;
+    }
+  }
+  

@@ -1,0 +1,80 @@
+.contact {
+  min-height: 800px;
+  background-image: url("../../assets/contact.jpg");
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 7rem;
+}
+.contact form {
+  border-radius: 10px;
+  background: whitesmoke;
+  width: 650px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  font-size: 20px;
+}
+.contact form div {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  gap: 7px;
+}
+.contact form div label {
+  font-weight: 500;
+}
+.contact form div input {
+  font-size: 20px;
+  padding: 7px 3px;
+  border: none;
+  border-bottom: 1px solid gray;
+  background: transparent;
+}
+
+.contact form div .small-label {
+  font-size: 1rem;
+  font-weight: 500;
+  transition: 0.3s linear;
+  transform: translateY(-0.2rem);
+}
+.contact form div:hover {
+  font-size: 1rem;
+  font-weight: 500;
+  transition: 0.3s linear;
+  transform: translateY(-0.2rem);
+}
+
+.contact form div input:focus {
+  border-bottom: 1px solid #0095ff;
+  outline: none;
+}
+.contact form div input:hover {
+  border-bottom: 1px solid #0095ff;
+  outline: none;
+}
+.contact form button {
+  border: none;
+  color: whitesmoke;
+  background: #0095ff;
+  padding: 10px;
+  font-size: 20px;
+  transition: 0.3s;
+}
+.contact form button:hover {
+  transition: 0.3s;
+  background: #0267af;
+  cursor: pointer;
+}
+@media (max-width: 1160px) {
+  .contact {
+    justify-content: center;
+    padding: 50px 20px;
+    background-position: left;
+  }
+}
